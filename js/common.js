@@ -1,3 +1,4 @@
+var bassURL = '/talk/';
 function $(selector) {
     return document.querySelector(selector);
   }

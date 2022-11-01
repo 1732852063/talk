@@ -3,7 +3,7 @@
     const user = resp.data;
     if(!user){
         alert('未登录或登录已过期')
-        location.href = './login.html';
+        location.href = bassURL + './login.html';
         return ;
     }
     
@@ -21,7 +21,7 @@
     //注销事件
     doms.close.onclick = function(){
         API.loginOut();
-        location.href = './login/html';
+        location.href = bassURL + './login/html';
     };
     
     async function loadHistory(){
